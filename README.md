@@ -1,7 +1,7 @@
 # XcodeMediaLibraryTweak
 Let the Xcode Media Library more useful
 
-Show image size for image type media. The size is the @1x scale. USE IT IN CODE WITHOUT THINKING!!!
+<font color=red size=6>**Show image size**</font> for image type media. Size is shown as @1x scale. USE IT IN CODE WITHOUT THINKING!!!
 
 ![image](helpImage.png)
 
@@ -16,9 +16,9 @@ Show image size for image type media. The size is the @1x scale. USE IT IN CODE 
 #THANKS
 
 * [Xcode 4 插件制作入门](http://www.onevcat.com/2013/02/xcode-plugin/)
-* [Creating an Xcode Plugin: A Quick-Start Guide](http://www.overacker.me/blog/2015/01/25/creating-an-xcode-plugin)
-* [DTXcodeUtils](https://github.com/thurn/DTXcodeUtils)
-* [DBSmartPanels](https://github.com/chaingarden/DBSmartPanels)
+* [Creating an Xcode Plugin: A Quick-Start Guide](http://www.overacker.me/blog/2015/01/25/creating-an-xcode-plugin)。这里有提到下面的DTXcodeUtils
+* [DTXcodeUtils](https://github.com/thurn/DTXcodeUtils), 一个快速上手的xcodePlugin模版，省去配置项目的烦恼
+* [DBSmartPanels](https://github.com/chaingarden/DBSmartPanels)。我是学习了这个代码写的XcodeMediaLibraryTweak
 
 ## TODO
 1. 大小字体用颜色区分
