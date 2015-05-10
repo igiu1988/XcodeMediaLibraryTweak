@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D321FEAD1AFEF68A00AC18A0 /* WYTweak.m in Sources */ = {isa = PBXBuildFile; fileRef = D321FEAC1AFEF68A00AC18A0 /* WYTweak.m */; };
+		D321FEB01AFEF7C400AC18A0 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D321FEAF1AFEF7C400AC18A0 /* AppKit.framework */; };
+		D321FEB41AFEF88800AC18A0 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = D321FEB31AFEF88800AC18A0 /* Aspects.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D321FEA01AFEF38000AC18A0 /* XcodeMediaLibraryTweak.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeMediaLibraryTweak.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		D321FEA41AFEF38000AC18A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D321FEAB1AFEF68A00AC18A0 /* WYTweak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYTweak.h; sourceTree = "<group>"; };
+		D321FEAC1AFEF68A00AC18A0 /* WYTweak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYTweak.m; sourceTree = "<group>"; };
+		D321FEAF1AFEF7C400AC18A0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D321FEB21AFEF88800AC18A0 /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		D321FEB31AFEF88800AC18A0 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		D321FEB61AFEF8BC00AC18A0 /* XcodeHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XcodeHeaders.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D321FE9D1AFEF38000AC18A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D321FEB01AFEF7C400AC18A0 /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D321FE971AFEF38000AC18A0 = {
+			isa = PBXGroup;
+			children = (
+				D321FEA21AFEF38000AC18A0 /* XcodeMediaLibraryTweak */,
+				D321FEAE1AFEF7A800AC18A0 /* Frameworks */,
+				D321FEA11AFEF38000AC18A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D321FEA11AFEF38000AC18A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D321FEA01AFEF38000AC18A0 /* XcodeMediaLibraryTweak.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D321FEA21AFEF38000AC18A0 /* XcodeMediaLibraryTweak */ = {
+			isa = PBXGroup;
+			children = (
+				D321FEB51AFEF88F00AC18A0 /* Category */,
+				D321FEB11AFEF88800AC18A0 /* Aspects */,
+				D321FEAB1AFEF68A00AC18A0 /* WYTweak.h */,
+				D321FEAC1AFEF68A00AC18A0 /* WYTweak.m */,
+				D321FEA31AFEF38000AC18A0 /* Supporting Files */,
+			);
+			path = XcodeMediaLibraryTweak;
+			sourceTree = "<group>";
+		};
+		D321FEA31AFEF38000AC18A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D321FEA41AFEF38000AC18A0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D321FEAE1AFEF7A800AC18A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D321FEAF1AFEF7C400AC18A0 /* AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D321FEB11AFEF88800AC18A0 /* Aspects */ = {
+			isa = PBXGroup;
+			children = (
+				D321FEB21AFEF88800AC18A0 /* Aspects.h */,
+				D321FEB31AFEF88800AC18A0 /* Aspects.m */,
+			);
+			path = Aspects;
+			sourceTree = "<group>";
+		};
+		D321FEB51AFEF88F00AC18A0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D321FEB61AFEF8BC00AC18A0 /* XcodeHeaders.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D321FE9F1AFEF38000AC18A0 /* XcodeMediaLibraryTweak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D321FEA71AFEF38000AC18A0 /* Build configuration list for PBXNativeTarget "XcodeMediaLibraryTweak" */;
+			buildPhases = (
+				D321FE9C1AFEF38000AC18A0 /* Sources */,
+				D321FE9D1AFEF38000AC18A0 /* Frameworks */,
+				D321FE9E1AFEF38000AC18A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XcodeMediaLibraryTweak;
+			productName = XcodeMediaLibraryTweak;
+			productReference = D321FEA01AFEF38000AC18A0 /* XcodeMediaLibraryTweak.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D321FE981AFEF38000AC18A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = IGIU;
+				TargetAttributes = {
+					D321FE9F1AFEF38000AC18A0 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D321FE9B1AFEF38000AC18A0 /* Build configuration list for PBXProject "XcodeMediaLibraryTweak" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D321FE971AFEF38000AC18A0;
+			productRefGroup = D321FEA11AFEF38000AC18A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D321FE9F1AFEF38000AC18A0 /* XcodeMediaLibraryTweak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D321FE9E1AFEF38000AC18A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D321FE9C1AFEF38000AC18A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D321FEAD1AFEF68A00AC18A0 /* WYTweak.m in Sources */,
+				D321FEB41AFEF88800AC18A0 /* Aspects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D321FEA51AFEF38000AC18A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D321FEA61AFEF38000AC18A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D321FEA81AFEF38000AC18A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = XcodeMediaLibraryTweak/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		D321FEA91AFEF38000AC18A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = XcodeMediaLibraryTweak/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D321FE9B1AFEF38000AC18A0 /* Build configuration list for PBXProject "XcodeMediaLibraryTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D321FEA51AFEF38000AC18A0 /* Debug */,
+				D321FEA61AFEF38000AC18A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D321FEA71AFEF38000AC18A0 /* Build configuration list for PBXNativeTarget "XcodeMediaLibraryTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D321FEA81AFEF38000AC18A0 /* Debug */,
+				D321FEA91AFEF38000AC18A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D321FE981AFEF38000AC18A0 /* Project object */;
+}
