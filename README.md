@@ -12,6 +12,15 @@ Let the Xcode Media Library more useful
 2. Open and run the project.
 3. Restart Xcode.
 
+# Xcode Version
+This plug-in is ONLY test in Xcode 6.3.1. If the plugin does not work, perhaps I miss the UUID of your Xcode version.
+
+Get you xcode UUID
+```
+defaults read /Applications/Xcode.app/Contents/Info DVTPlugInCompatibilityUUID
+```
+
+Copy the output and add it to XcodeMediaLibraryTweak's info.plist DVTPlugInCompatibilityUUIDs Key. Then Try run and restart Xcode.
 
 #THANKS
 

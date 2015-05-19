@@ -295,6 +295,7 @@
 				D321FEA91AFEF38000AC18A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
