@@ -44,28 +44,43 @@ static WYTweak *sharedPlugin;
         
         
         // DVTLibraryAssetView就是显示在Media Libray列表里的View
-        [objc_getClass("DVTLibraryAssetView") aspect_hookSelector:@selector(setTitle:) withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo) {
+//        [objc_getClass("DVTLibraryAssetView") aspect_hookSelector:@selector(setTitle:) withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo) {
+//            
+//            DVTLibraryAssetView *view = [aspectInfo instance];
+//            
+//            // 检查imageSize是否正确
+//            
+//            NSValue *value = objc_getAssociatedObject(view, NSSelectorFromString(@"imageSize"));
+//            NSSize imageSize = [value sizeValue];
+//            if (NSEqualSizes(NSZeroSize, imageSize)) {
+//                return ;
+//            }
+//            
+//            
+//            NSString *title = [aspectInfo arguments][0];
+//            
+//            NSString *imageSizeString = [NSString stringWithFormat:@"大小：%.0fx%.0f", imageSize.width, imageSize.height];
+//            NSString *newTitle = [title stringByAppendingFormat:@"\n\n%@", imageSizeString];
+//            
+//            
+//            NSInvocation *invocation = [aspectInfo originalInvocation];
+//            [invocation setArgument:&newTitle atIndex:2];
+//            
+//            
+//        } error:NULL];
+        
+        [objc_getClass("DVTLibraryAssetView") aspect_hookSelector:@selector(drawRect:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo) {
             
             DVTLibraryAssetView *view = [aspectInfo instance];
-            
-            // 检查imageSize是否正确
-            
+
             NSValue *value = objc_getAssociatedObject(view, NSSelectorFromString(@"imageSize"));
             NSSize imageSize = [value sizeValue];
             if (NSEqualSizes(NSZeroSize, imageSize)) {
                 return ;
             }
             
-            
-            NSString *title = [aspectInfo arguments][0];
-            
-            NSString *imageSizeString = [NSString stringWithFormat:@"大小：%.0fx%.0f", imageSize.width, imageSize.height];
-            NSString *newTitle = [title stringByAppendingFormat:@"\n\n%@", imageSizeString];
-            
-            
-            NSInvocation *invocation = [aspectInfo originalInvocation];
-            [invocation setArgument:&newTitle atIndex:2];
-            
+            NSString *imageSizeString = [NSString stringWithFormat:@"size %.0fx%.0f", imageSize.width, imageSize.height];
+            [imageSizeString drawAtPoint:NSMakePoint(60, 40) withAttributes:@{NSFontAttributeName:[NSFont systemFontOfSize:12], NSForegroundColorAttributeName:[NSColor redColor]}];
             
         } error:NULL];
         
@@ -95,6 +110,7 @@ static WYTweak *sharedPlugin;
             // 只有为图像资源时，才进行大小识别
             DVTPrimitiveFileDataType *fileType = resouce.contentType;
             NSString *typeString = [fileType displayName];
+            
             if ([typeString containsString:@"Image"]) {
                 DVTFilePath *file = resouce.sourceFilePath;
                 NSImage *image = [[NSImage alloc] initWithContentsOfURL:file.fileURL];
