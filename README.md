@@ -5,15 +5,13 @@ Let the Xcode Media Library more useful
 
 ![image](helpImage.png)
 
-
-
 # Installation
 1. Clone this repository.
 2. Open and run the project.
 3. Restart Xcode.
 
 # Xcode Version
-This plug-in is ONLY test in Xcode 6.3.1. If the plugin does not work, perhaps I miss the UUID of your Xcode version.
+This plug-in is ONLY test in Xcode 6.3.1, but should work will on Xcode 6.x. If the plugin does not work, perhaps I miss the UUID of your Xcode version.
 
 Get you xcode UUID
 ```
@@ -22,6 +20,7 @@ defaults read /Applications/Xcode.app/Contents/Info DVTPlugInCompatibilityUUID
 
 Copy the output and add it to XcodeMediaLibraryTweak's info.plist DVTPlugInCompatibilityUUIDs Key. Then Try run and restart Xcode.
 
+Any question, issue me.^_^
 #THANKS
 
 * [Xcode 4 插件制作入门](http://www.onevcat.com/2013/02/xcode-plugin/)
@@ -30,4 +29,4 @@ Copy the output and add it to XcodeMediaLibraryTweak's info.plist DVTPlugInCompa
 * [DBSmartPanels](https://github.com/chaingarden/DBSmartPanels)。我是学习了这个代码写的XcodeMediaLibraryTweak
 
 ## TODO
-1. 大小字体用颜色区分
+1. 可以直接显示xcassets里图片的大小
