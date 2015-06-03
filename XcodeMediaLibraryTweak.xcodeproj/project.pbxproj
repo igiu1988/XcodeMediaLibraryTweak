@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D31C598E1B1EF00F00E04695 /* MediaLibrayTweakSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = D31C598C1B1EF00E00E04695 /* MediaLibrayTweakSetting.m */; };
+		D31C598F1B1EF00F00E04695 /* MediaLibrayTweakSetting.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31C598D1B1EF00F00E04695 /* MediaLibrayTweakSetting.xib */; };
 		D321FEAD1AFEF68A00AC18A0 /* WYTweak.m in Sources */ = {isa = PBXBuildFile; fileRef = D321FEAC1AFEF68A00AC18A0 /* WYTweak.m */; };
 		D321FEB01AFEF7C400AC18A0 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D321FEAF1AFEF7C400AC18A0 /* AppKit.framework */; };
 		D321FEB41AFEF88800AC18A0 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = D321FEB31AFEF88800AC18A0 /* Aspects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D31C598B1B1EF00E00E04695 /* MediaLibrayTweakSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaLibrayTweakSetting.h; sourceTree = "<group>"; };
+		D31C598C1B1EF00E00E04695 /* MediaLibrayTweakSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaLibrayTweakSetting.m; sourceTree = "<group>"; };
+		D31C598D1B1EF00F00E04695 /* MediaLibrayTweakSetting.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaLibrayTweakSetting.xib; sourceTree = "<group>"; };
 		D321FEA01AFEF38000AC18A0 /* XcodeMediaLibraryTweak.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeMediaLibraryTweak.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		D321FEA41AFEF38000AC18A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D321FEAB1AFEF68A00AC18A0 /* WYTweak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYTweak.h; sourceTree = "<group>"; };
@@ -59,6 +64,9 @@
 				D321FEB11AFEF88800AC18A0 /* Aspects */,
 				D321FEAB1AFEF68A00AC18A0 /* WYTweak.h */,
 				D321FEAC1AFEF68A00AC18A0 /* WYTweak.m */,
+				D31C598B1B1EF00E00E04695 /* MediaLibrayTweakSetting.h */,
+				D31C598C1B1EF00E00E04695 /* MediaLibrayTweakSetting.m */,
+				D31C598D1B1EF00F00E04695 /* MediaLibrayTweakSetting.xib */,
 				D321FEA31AFEF38000AC18A0 /* Supporting Files */,
 			);
 			path = XcodeMediaLibraryTweak;
@@ -153,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D31C598F1B1EF00F00E04695 /* MediaLibrayTweakSetting.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D31C598E1B1EF00F00E04695 /* MediaLibrayTweakSetting.m in Sources */,
 				D321FEAD1AFEF68A00AC18A0 /* WYTweak.m in Sources */,
 				D321FEB41AFEF88800AC18A0 /* Aspects.m in Sources */,
 			);
