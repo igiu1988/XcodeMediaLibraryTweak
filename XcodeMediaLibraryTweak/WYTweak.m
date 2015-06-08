@@ -95,7 +95,9 @@ static WYTweak *sharedPlugin;
             // 从asset中得到image大小
             // 资源存在1位、2倍、3倍图时，resourceSet就会有多个元素了
             id representedObject = asset.representedObject;
-            NSLog(@"库类型%@", NSStringFromClass([representedObject class]));
+//            NSLog(@"库类型%@", NSStringFromClass([representedObject class]));
+            
+            // 只有在资源类型是IDEMediaResourceVariantSet时才继续执行
             if (![NSStringFromClass([representedObject class]) isEqualToString:@"IDEMediaResourceVariantSet"]) {
                 return ;
             }
