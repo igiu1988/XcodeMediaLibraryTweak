@@ -50,7 +50,8 @@ static WYTweak *sharedPlugin;
     return self;
 }
 
-- (void) applicationDidFinishLaunching: (NSNotification*) noti {
+- (void)applicationDidFinishLaunching:(NSNotification*)noti {
+    
     NSMenuItem *editMenuItem = [[NSApp mainMenu] itemWithTitle:@"Window"];
     if (editMenuItem) {
         [[editMenuItem submenu] addItem:[NSMenuItem separatorItem]];
@@ -59,6 +60,7 @@ static WYTweak *sharedPlugin;
         
         [newMenuItem setTarget:self];
         [[editMenuItem submenu] addItem:newMenuItem];
+        
     }
     
     
