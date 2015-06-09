@@ -67,6 +67,7 @@ static WYTweak *sharedPlugin;
     }
     
     _setting = [[MediaLibrayTweakSetting alloc] initWithWindowNibName:@"MediaLibrayTweakSetting"];
+
     
     [objc_getClass("DVTLibraryAssetView") aspect_hookSelector:@selector(drawRect:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo) {
         
@@ -79,7 +80,7 @@ static WYTweak *sharedPlugin;
         }
         
         NSString *imageSizeString = [NSString stringWithFormat:@"size %.0fx%.0f", imageSize.width, imageSize.height];
-        [imageSizeString drawAtPoint:NSMakePoint(60, 40) withAttributes:@{NSFontAttributeName:[NSFont systemFontOfSize:12], NSForegroundColorAttributeName:[NSColor redColor]}];
+        [imageSizeString drawAtPoint:NSMakePoint(60, 40) withAttributes:@{NSFontAttributeName:[NSFont systemFontOfSize:12], NSForegroundColorAttributeName:_setting.color}];
         
     } error:NULL];
     
@@ -94,13 +95,10 @@ static WYTweak *sharedPlugin;
         // 从asset中得到image大小
         // 资源存在1位、2倍、3倍图时，resourceSet就会有多个元素了
         id representedObject = asset.representedObject;
-        NSLog(@"库类型%@", NSStringFromClass([representedObject class]));
         if (![NSStringFromClass([representedObject class]) isEqualToString:@"IDEMediaResourceVariantSet"]) {
             return ;
         }
-        
-        
-        
+
         NSSet *resourceSet = asset.representedObject.resources;
         
         // 随便取一个资源出来，在image size时，sdk会自动帮助我们识别图片大小

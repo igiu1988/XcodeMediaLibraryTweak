@@ -9,5 +9,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface MediaLibrayTweakSetting : NSWindowController
+@property (nonatomic, strong) NSColor *color;
 
 @end

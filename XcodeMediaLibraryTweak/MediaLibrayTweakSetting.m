@@ -8,19 +8,9 @@
 
 #import "MediaLibrayTweakSetting.h"
 
-#define DEFAULT_COLOR       0xff0000
-
-#define RGBCOLOR_HEX(hexColor) [UIColor colorWithRed: (((hexColor >> 16) & 0xFF))/255.0f         \
-green: (((hexColor >> 8) & 0xFF))/255.0f             \
-blue: ((hexColor & 0xFF))/255.0f                    \
-alpha: 1]
-
 @interface MediaLibrayTweakSetting ()
 {
-    
-    __weak IBOutlet NSTextField *_colorLabel;
     __weak IBOutlet NSColorWell *_colorWell;
-    
 }
 @end
 
@@ -28,9 +18,29 @@ alpha: 1]
 
 - (void)windowDidLoad {
     [super windowDidLoad];
-
-    [[NSUserDefaults standardUserDefaults] setObject:@(0xff0000) forKey:@"MediaLibrayTweakColor"];
+    _colorWell.color = self.color;
 }
 
+- (IBAction)colorChange:(NSColorWell *)sender {
+    self.color = sender.color;
+    
+    // 保存
+    NSData *colorData = [NSArchiver archivedDataWithRootObject:sender.color];
+    [[NSUserDefaults standardUserDefaults] setObject:colorData forKey:@"MediaLibrayTweakColor"];
+}
+
+- (NSColor *)color{
+    if (!_color) {
+        NSData *colorData = [[NSUserDefaults standardUserDefaults] dataForKey:@"MediaLibrayTweakColor"];
+        
+        if (!colorData) {
+            _color = [NSColor blackColor];
+        }else{
+            _color = [NSUnarchiver unarchiveObjectWithData:colorData];
+        }
+    }
+    
+    return _color;
+}
 
 @end

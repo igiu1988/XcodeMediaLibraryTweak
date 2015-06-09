@@ -11,5 +11,4 @@
 @interface WYTweak : NSObject
 
 + (instancetype)sharedPlugin;
-
 @end
