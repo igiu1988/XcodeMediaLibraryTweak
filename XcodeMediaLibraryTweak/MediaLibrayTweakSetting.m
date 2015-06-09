@@ -8,26 +8,29 @@
 
 #import "MediaLibrayTweakSetting.h"
 
-@interface MediaLibrayTweakSetting ()
+#define DEFAULT_COLOR       0xff0000
 
+#define RGBCOLOR_HEX(hexColor) [UIColor colorWithRed: (((hexColor >> 16) & 0xFF))/255.0f         \
+green: (((hexColor >> 8) & 0xFF))/255.0f             \
+blue: ((hexColor & 0xFF))/255.0f                    \
+alpha: 1]
+
+@interface MediaLibrayTweakSetting ()
+{
+    
+    __weak IBOutlet NSTextField *_colorLabel;
+    __weak IBOutlet NSColorWell *_colorWell;
+    
+}
 @end
 
 @implementation MediaLibrayTweakSetting
 
 - (void)windowDidLoad {
     [super windowDidLoad];
-    
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
-    
-    
-}
-- (IBAction)showColorPanel:(id)sender {
-    NSColorPanel *panel = [NSColorPanel sharedColorPanel];
+
+    [[NSUserDefaults standardUserDefaults] setObject:@(0xff0000) forKey:@"MediaLibrayTweakColor"];
 }
 
-
-- (void)changeColor:(id)sender{
-    
-}
 
 @end

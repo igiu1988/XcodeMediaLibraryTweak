@@ -10,11 +10,14 @@
 #import "XcodeHeaders.h"
 #import "Aspects.h"
 #import <objc/runtime.h>
+#import "MediaLibrayTweakSetting.h"
 
 static WYTweak *sharedPlugin;
 
 @interface WYTweak()
-
+{
+    MediaLibrayTweakSetting *_setting;
+}
 @property (nonatomic, strong, readwrite) NSBundle *bundle;
 @end
 
@@ -37,7 +40,7 @@ static WYTweak *sharedPlugin;
 }
 
 - (void)showSettingPanel{
-    NSLog(@"asdf");
+    [_setting showWindow:nil];
 }
 
 - (instancetype)init {
@@ -63,6 +66,7 @@ static WYTweak *sharedPlugin;
         
     }
     
+    _setting = [[MediaLibrayTweakSetting alloc] initWithWindowNibName:@"MediaLibrayTweakSetting"];
     
     [objc_getClass("DVTLibraryAssetView") aspect_hookSelector:@selector(drawRect:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo) {
         
