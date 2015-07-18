@@ -10,8 +10,11 @@ Let the Xcode Media Library more useful
 2. Open and run the project.
 3. Restart Xcode.
 
+#Usage
+open MediaLibrayTweak in Windows menu, click, then custom the image size string;
+
 # Xcode Version
-This plug-in is ONLY test in Xcode 6.3.1, but should work will on Xcode 6.x. If the plugin does not work, perhaps I miss the UUID of your Xcode version.
+This plug-in is ONLY test in Xcode 6.3.1, but should work will on Xcode 6.x and later. If the plugin does not work, perhaps I miss the UUID of your Xcode version.
 
 Get you xcode UUID
 ```
